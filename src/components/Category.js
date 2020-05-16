@@ -1,11 +1,10 @@
 import React from 'react'
 import { Card, CardContent, CardActions, Divider } from '@material-ui/core'
-import products from '../products.json'
 import { Link } from 'react-router-dom'
 
 export default function Category(props) {
       let category = props.match.params.category
-      let productInCategory = products.filter(product => category == product.Category)
+      let productInCategory = props.products.filter(product => category == product.Category)
      
     return (
         <div className="card-container">

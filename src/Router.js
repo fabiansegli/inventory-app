@@ -1,8 +1,8 @@
 import React from 'react'
 import { Switch, Route } from 'react-router'
-import Home from './components/Home'
+import Home from './Containers/Home'
 import Products from './Containers/Products'
-import Category from "./components/Category"
+import Category from "./Containers/Category"
 import Type from "./components/Type"
 
 const Router = () => {
