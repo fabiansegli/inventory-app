@@ -3,7 +3,8 @@ import { Card, CardContent, CardActions, Divider } from '@material-ui/core'
 import { Link } from 'react-router-dom'
 
 const Home = (props) => {
-    console.log(props)
+    console.log("props in home component", props)
+    props.fetchCategories()
     return (
         <div className="card-container">
             {props.products.map((product, idx) => (
@@ -15,13 +16,13 @@ const Home = (props) => {
                         <li>Volume: {product["Volume"]}</li>
                         <li>Category: {product["Category"]}</li>
                         <li>Type: {product["Type"]}</li>
-                        <li>Stock: {product["Stock"]}</li>
+                        <li><b>Stock: {product["Stock"]}</b></li>
                         </ul>
                     </CardContent>
                     <Divider />
                     <CardActions style={{ color: 'black' }}>
                         <Link to={`/products/${product.id}`}>
-                            <b> See more Details </b>
+                            <b> Product Info </b>
                         </Link>
                     </CardActions>
                 </Card>

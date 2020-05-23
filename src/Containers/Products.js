@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import Products from "../components/Products";
+import { changeStock } from "../Redux/actions"
 
 
 const mapStateToProps = (state) => {
@@ -8,4 +9,12 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps)(Products)
+const mapDispatchToProps=(dispatch) => {
+    return {
+        changeStock:(product) => dispatch(changeStock(product))
+            
+        
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Products)

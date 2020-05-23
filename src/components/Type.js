@@ -23,7 +23,7 @@ export default function Type(props) {
                     <Divider />
                     <CardActions style={{ color: 'black' }}>
                         <Link to={`/products/${product.id}`}>
-                        <b> See more Details </b>
+                        <b> Product Info </b>
                         </Link>
                     </CardActions>
                 </Card>

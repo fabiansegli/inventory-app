@@ -1,7 +1,7 @@
 [
     {
        "id": 1,
-       "Name":"Casita Cold Brew",
+       "Name":"Casita Cold Brew 48",
        "Size":48,
        "Volume":"oz",
        "Category":"Bag in a Box",
@@ -12,7 +12,7 @@
     },
     {
        "id": 2,
-       "Name":"Casita Cold Brew",
+       "Name":"Casita Cold Brew 96",
        "Size":96,
        "Volume":"oz",
        "Category":"Bag in a Box",
@@ -23,7 +23,7 @@
     },
     {
        "id": 3,
-       "Name":"Casita Cold Brew",
+       "Name":"Casita Cold Brew 5",
        "Size":5,
        "Volume":"gal",
        "Category":"Nitro Keg",
@@ -34,7 +34,7 @@
     },
     {
        "id": 4,
-       "Name":"Casita Cold Brew",
+       "Name":"Casita Cold Brew 15.5",
        "Size":15.5,
        "Volume":"gal",
        "Category":"Nitro Keg",

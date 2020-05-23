@@ -12,14 +12,17 @@ const Nav = () => {
                     <MenuIcon /> 
                 </IconButton>
                 <Typography variant="h6" style={{ flexGrow: "1" }}>
-                    Inventory Managment
+                    Tiny House Coffee Inventory
                 </Typography>
                 <ul className="nav-list">
                     <li className="nav-list-item">
-                        <Link to="/">Home</Link>
+                        <Link to="/home">Inventory</Link>
                     </li>
                     <li className="nav-list-item">
-                        <Link to="/inventory">Inventory</Link>
+                        <Link to="/inventory">About</Link>
+                    </li>
+                    <li className="nav-list-item">
+                        <Link to="/">Logout</Link>
                     </li>
                 </ul>
             </Toolbar>

@@ -2,47 +2,51 @@ export default {
     products: [
         {
            "id": 1,
-           "Name":"Casita Cold Brew",
+           "Name":"Casita Cold Brew 48oz",
            "Size":48,
            "Volume":"oz",
            "Category":"Bag in a Box",
            "Type":"Blend",
            "Description":"Bag in a box Cold Brew",
            "UPC": 18000000001,
-           "Stock": 100
+           "Stock": 100,
+           "src":"https://cdn.shopify.com/s/files/1/0078/2545/7263/products/48oz_BiB_large_7740aff8-7dc1-431c-af5f-cd772fae4262_900x.png?v=1584332428"
         },
         {
            "id": 2,
-           "Name":"Casita Cold Brew",
+           "Name":"Casita Cold Brew 96oz",
            "Size":96,
            "Volume":"oz",
            "Category":"Bag in a Box",
            "Type":"Blend",
            "Description":"Bag in a box Cold Brew",
            "UPC": 10000000002,
-           "Stock": 100
+           "Stock": 100,
+           "src":"https://cdn.shopify.com/s/files/1/0078/2545/7263/products/96oz_BiB_large_0255c954-a99f-4784-a705-9a46363d4af2_900x.png?v=1584332428"
         },
         {
            "id": 3,
-           "Name":"Casita Cold Brew",
+           "Name":"Casita Cold Brew 5 gal",
            "Size":5,
            "Volume":"gal",
            "Category":"Nitro Keg",
            "Type":"Blend",
            "Description":"Nitro Cold Brew Keg",
            "UPC": 10000000003,
-           "Stock": 100
+           "Stock": 100,
+           "src": "https://cdn.shopify.com/s/files/1/0078/2545/7263/files/THCR_bwbc_normal_1e50a59b-6816-4584-9173-e7255b962795_x200.png?v=1569100460"
         },
         {
            "id": 4,
-           "Name":"Casita Cold Brew",
+           "Name":"Casita Cold Brew 15.5 gal",
            "Size":15.5,
            "Volume":"gal",
            "Category":"Nitro Keg",
            "Type":"Blend",
            "Description":"Nitro Cold Brew Keg",
            "UPC": 10000000004,
-           "Stock": 100
+           "Stock": 100,
+           "src": "https://cdn.shopify.com/s/files/1/0078/2545/7263/files/THCR_bwbc_normal_1e50a59b-6816-4584-9173-e7255b962795_x200.png?v=1569100460"
         },
         {
            "id": 5,
@@ -55,7 +59,8 @@ export default {
            "Description":"Whole Beans Coffee",
            "Origin":"Nicaragua",
            "UPC": 10000000005,
-           "Stock": 100
+           "Stock": 100,
+           "src":"https://cdn.shopify.com/s/files/1/0078/2545/7263/products/lacasitashadowright_900x.jpg?v=1571720360"
         },
         {
             "id": 6,
@@ -68,7 +73,8 @@ export default {
             "Description":"Whole Beans Coffee",
             "Origin":"Nicaragua",
             "UPC": 10000000006,
-            "Stock": 100
+            "Stock": 100,
+            "src": "https://cdn.shopify.com/s/files/1/0078/2545/7263/products/elsegovianoshadowright_900x.jpg?v=1571720360"
         },
         {
             "id": 7,
@@ -81,7 +87,8 @@ export default {
             "Description":"Whole Beans Coffee",
             "Origin":"Brazil",
             "UPC": 10000000007,
-            "Stock": 100
+            "Stock": 100,
+            "src": "https://cdn.shopify.com/s/files/1/0078/2545/7263/products/tresbarrasshadowright_900x.jpg?v=1571720360"
         },
         {
             "id": 8,
@@ -94,7 +101,8 @@ export default {
             "Description":"Whole Beans Coffee",
             "Origin":"Colombia",
             "UPC": 10000000008,
-            "Stock": 100
+            "Stock": 100,
+            "src": "https://cdn.shopify.com/s/files/1/0078/2545/7263/products/fincacristalinashadowright_900x.jpg?v=1571720360"
         },
         {
             "id": 9,
@@ -107,7 +115,8 @@ export default {
             "Description":"Whole Beans Coffee",
             "Origin":"Ethiopia",
             "UPC": 10000000009,
-            "Stock": 100
+            "Stock": 100,
+            "src": "https://cdn.shopify.com/s/files/1/0078/2545/7263/products/sb_aricha_right_square_900x.jpg?v=1571720360"
         },
         {
             "id": 10,
@@ -120,7 +129,8 @@ export default {
             "Description":"Whole Beans Coffee",
             "Origin":"Sumatra",
             "UPC": 100000000010,
-            "Stock": 100
+            "Stock": 100,
+            "src": "https://cdn.shopify.com/s/files/1/0078/2545/7263/products/kerinicishadowright_900x.jpg?v=1571720361"
         },
         {
             "id": 11,
@@ -133,7 +143,8 @@ export default {
             "Description":"Whole Beans Coffee",
             "Origin":"Uganda",
             "UPC": 100000000011,
-            "Stock": 100
+            "Stock": 100,
+            "src": "https://cdn.shopify.com/s/files/1/0078/2545/7263/products/sb_bushula_right_1_69ab0f43-197e-4330-aa8e-90bd23904b37_900x.jpg?v=1583002413"
         },
         {
             "id": 12,
@@ -146,7 +157,8 @@ export default {
             "Description":"Whole Beans Coffee",
             "Origin":"Burundi",
             "UPC": 100000000012,
-            "Stock": 100
+            "Stock": 100,
+            "src": "https://cdn.shopify.com/s/files/1/0078/2545/7263/products/sb_munkaze_hill_right_900x.jpg?v=1584651291"
         },
         {
             "id": 13,
@@ -159,7 +171,8 @@ export default {
             "Description":"Whole Beans Coffee",
             "Origin":"Peru",
             "UPC": 100000000013,
-            "Stock": 100
+            "Stock": 100,
+            "src": "https://cdn.shopify.com/s/files/1/0078/2545/7263/products/Peru_right_square_Pic_900x.jpg?v=1585015079"
         },
         {
             "id": 14,
@@ -172,7 +185,8 @@ export default {
             "Description":"Whole Beans Coffee",
             "Origin":"House Blend",
             "UPC": 100000000014,
-            "Stock": 100
+            "Stock": 100,
+            "src": "https://cdn.shopify.com/s/files/1/0078/2545/7263/products/BarrelAged_Pic_900x.png?v=1589153306"
         },
         {
             "id": 15,
@@ -185,7 +199,8 @@ export default {
             "Description":"Whole Beans Coffee",
             "Origin":"House Blend",
             "UPC": 100000000015,
-            "Stock": 100
+            "Stock": 100,
+            "src": "https://cdn.shopify.com/s/files/1/0078/2545/7263/products/moontowerblackright_900x.jpg?v=1571720360"
         },
         {
             "id": 16,
@@ -198,7 +213,8 @@ export default {
             "Description":"Whole Beans Coffee",
             "Origin":"Colombia",
             "UPC": 100000000016,
-            "Stock": 100
+            "Stock": 100,
+            "src": "https://cdn.shopify.com/s/files/1/0078/2545/7263/products/tolimashadowright_900x.jpg?v=1571720360"
         }
     
     

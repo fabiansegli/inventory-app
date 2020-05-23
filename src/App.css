@@ -13,7 +13,7 @@
   margin: 25px;
 }
 
-.card-list{
+.card-list {
   list-style: none;
 }
 
@@ -24,6 +24,7 @@ a {
 
 ul {
   padding-inline-start: 20px;
+  list-style: none;
 }
 
 .text-gray {
@@ -40,10 +41,43 @@ ul {
   margin: auto 20px;
 }
 
-.car-container {
+.product-container {
   margin: 50px;
 }
 
-.car-paper {
+.img {
+ margin-left: 100px;
+}
+.product-paper {
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.inv-button {
+  box-shadow: 5px 5px 5px black;
+  margin: 20px 140px ;
+  width: fit-content;
+  cursor: pointer !important;
+}
+
+.link-category {
+  background-color: #5ca383 !important;
+  cursor: pointer !important;
+  font-weight: bolder;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.link-type {
+  background-color: #5ca383 !important;
+  margin: 10px 0 10px;
+  cursor: pointer !important;
+  font-weight: bolder;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.box-input {
+  width: fit-content;
+  margin-left: 110px;
 }
