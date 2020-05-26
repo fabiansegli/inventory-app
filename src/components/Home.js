@@ -25,7 +25,7 @@ const Home = (props) => {
                             <b> Product Info </b>
                         </Link>
                     </CardActions>
-                </Card>
+                </Card>  
             ))}
         </div>
     )

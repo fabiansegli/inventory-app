@@ -1,65 +1,58 @@
-import React, { Component } from 'react';
-import { Button, TextField } from '@material-ui/core';
-import './Login.css'
-import { Redirect } from "react-router-dom"
+import React, { Component } from 'react'
+import {
+  TextField,
+  Button,
+  Container
+} from '@material-ui/core'
+import Footer from "./Footer"
 
-class Login extends Component {
-    state = {
-        user: '',
-        pass: '',
-        loggedIn: false
-    }
-    
-    handleChangeUser = (e) => {
-        this.setState({user:e.target.value})
-    }
+class App extends Component {
+  state = {
+    username: '',
+    password: ''
+  }
 
-    handleChangePass = (e) => {
-        this.setState({pass:e.target.value})
-    }
-  
-    submit = (e) => {
-        e.preventDefault()
-        // if(this.state.user == '' && this.state.pass == '') {
-            this.setState({loggedIn: true})
-        // }
-        
-    }
+  handleTextChange = (e) => {
+    const state = { ...this.state }
+    state[e.target.name] = e.target.value
+    this.setState(state)
+  }
 
-    
-    render() {
-        if(this.state.loggedIn == false) {
-            return (
-                <form className= 'form' style={{ display: 'flex', flexDirection: 'column'}} onSubmit={this.submit}>
-                    <TextField 
-                        id='user'
-                        label='User Name'
-                        value={this.state.user}
-                        onChange={this.handleChangeUser}
-                        required
-                        />
-                    <TextField
-                    id='pass'
-                    label='password'
-                    type='password'
-                    value={this.state.pass}
-                    onChange={this.handleChangePass} 
-                    required 
-                    />
-                    <Button 
-                    variant="contained" 
-                    type='submit'
-                    >Login
-                    </Button>
-               </form>
-                
-             )
-        } else {
-            return(
-                <Redirect to= "/home"> </Redirect>
-            )
-        }
-   
+  login = (e) => {
+    e.preventDefault()
+    document.cookie = "loggedIn=true;max-age=60*1000"
+    window.location.replace("/about")
+  }
+  render() {
+    return (
+      <div className="App">
+        <Container maxWidth="sm">
+          <form className="login-form" onSubmit={this.login}>
+            <TextField
+              required
+              onChange={this.handleTextChange}
+              value={this.state.username}
+              name="username"
+              label="Username"
+              type="text" />
+            <TextField
+              required
+              onChange={this.handleTextChange}
+              value={this.state.password}
+              name="password"
+              label="Password"
+              type="password" />
+            <Button
+              style={{ backgroundColor: "#5ca383"}}
+              type="submit"
+              variant="contained"
+              >Login</Button>
+          </form>
+        </Container>
+        <Footer />
+      </div>
+    );
   }
 }
-export default Login
+
+export default App;

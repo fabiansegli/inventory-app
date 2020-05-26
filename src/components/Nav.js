@@ -23,32 +23,31 @@ const Nav = () => {
                     <IconButton color="inherit" aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                          <MenuIcon />
                      </IconButton>
-                            <Menu
+                            <Menu 
                                 id="simple-menu"
                                 anchorEl={anchorEl}
                                 keepMounted
                                 open={Boolean(anchorEl)}
-                                onClose={handleClose}
-                            >
-                                <MenuItem onClick={handleClose}><Link to="/home">Home</Link></MenuItem>
-                                <MenuItem onClick={handleClose}>My account</MenuItem>
-                                <MenuItem onClick={handleClose}><Link to="/">Logout</Link></MenuItem>
+                                onClose={handleClose}>
+                                    <MenuItem onClick={handleClose}><Link to="/home">Home</Link></MenuItem>
+                                    <MenuItem onClick={handleClose}>My account</MenuItem>
+                                    <MenuItem onClick={() => { 
+                                                document.cookie = "loggedIn="
+                                                window.location.replace("/login")
+                                            }}><Link to="/">Logout</Link>
+                                    </MenuItem>
                             </Menu>        
-                <Typography variant="h6" style={{ flexGrow: "1" }}>
-                    Tiny House Coffee Inventory
-                </Typography>
-                    <ul className="nav-list">
-                        <li className="nav-list-item">
-                            <Link to="/home">Inventory</Link>
-                        </li>
-                        <li className="nav-list-item">
-                            <Link to="/about">About</Link>
-                        </li>
-                        {/*Logout moved to MenuIcon */}
-                        {/* <li className="nav-list-item">
-                            <Link to="/">Logout</Link>
-                        </li> */}
-                    </ul>
+                                <Typography variant="h6" style={{ marginLeft: "10%", flexGrow: "1" }}>
+                                    Tiny House Coffee Inventory
+                                </Typography>
+                            <ul className="nav-list">
+                                <li className="nav-list-item">
+                                    <Link to="/home">Inventory</Link>
+                                </li>
+                                <li className="nav-list-item">
+                                    <Link to="/about">About</Link>
+                                </li>
+                            </ul>
             </Toolbar>
         </AppBar>
     )

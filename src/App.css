@@ -2,10 +2,18 @@
   text-align: center;
 }
 
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 100px 299px 140px;
+  width: 50%;
+}
+
 .card-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 200px auto;
 }
 
 .card {
@@ -15,6 +23,10 @@
 
 .card-list {
   list-style: none;
+}
+
+.about-container {
+  margin: 50px 30px 155px 50px;
 }
 
 a {

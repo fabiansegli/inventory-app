@@ -5,6 +5,7 @@ import './App.css';
 import Router from "./Router"
 import { BrowserRouter } from "react-router-dom";
 import Nav from "./components/Nav"
+import Footer from "./components/Footer"
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
       <Nav />
       <Router />
+      {/* <Footer /> */}
       </BrowserRouter>
     </div>
     </Provider>
